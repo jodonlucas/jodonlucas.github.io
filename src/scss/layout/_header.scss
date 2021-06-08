@@ -1,0 +1,103 @@
+/* HEADER */
+// #container::before {
+//     background: $color-red;
+//     content: "";
+//     display: block;
+//     height: 100px;
+//     position: fixed;
+//     width: 100%;
+//     top: 0;
+// }
+
+.fpg-title-wrapper {
+    // Red titlebar area
+    &:before {
+        background: $color-red url( '../img/logo-wordmark.svg' ) no-repeat center center;
+        background-size: 70px 20px;
+        content: "";
+        display: block;
+        height: 60px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+
+    // Curve at the bottom of the titlebar
+    &:after {
+        background: url( '../img/bg-curve.svg' ) no-repeat bottom center;
+        background-size: contain;
+        content: "";
+        position: fixed;
+        top: 60px;
+        left: 0;
+        height: 5.87vw; // Math to figure out width-to-height ratio
+        width: 100%;
+    }
+
+    // Override Fitpay defaults of a fixed title
+    position: relative;
+    margin-top: 0;
+
+    .fpg-title,
+    .createWallet-title {
+        // TODO: Remove these if our H1 styles are good enough
+        background: transparent;
+        border: 0;
+        margin-left: $gutter;
+        margin-right: $gutter;
+
+        // Add in a subheading manually
+        &::before {
+            color: $color-fog;
+            content: "Token Credentials";
+            display: block;
+            font-family: $font-copy;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        &.fp-add-card-title,
+        &.fp-terms-title,
+        &.fp-idv-title {
+            content: "Add a Credit Card";
+        }
+
+        &.fp-card-detail-title {
+            content: "Your Wallet";
+        }
+
+        // Red line under page title
+        &::after {
+            border-bottom: 1px solid $color-red;
+            content: "";
+            display: block;
+            margin: 0 auto;
+            padding-top: 10px;
+            width: 40px;
+        }
+    } // END fpg-title
+
+    .fpg-title-btn {
+        position: fixed;
+        top: 8px;
+        z-index: 200; // Make sure titlebar buttons are always on top
+    }
+
+    .fpg-back-arrow {
+        background: url( '../img/icon-arrow-left.svg' ) no-repeat center center;
+        background-size: 20px 16px;
+    }
+} // END fpg-title-wrapper
+
+// General description text below header
+.fpg-description {
+    font-family: $font-copy;
+    font-size: $font-size;
+    font-weight: normal;
+    margin: 0 $gutter;
+    text-align: center;
+    width: auto;
+}

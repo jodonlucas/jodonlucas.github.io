@@ -1,0 +1,26 @@
+/*
+** VERIFY IDENTITY PAGE
+** Verify Identtiy page from card issuers that a user must take action
+** on by using one of the options presented before the card can be
+** activated on the device
+*/
+
+// TODO: Move the Delete Card button from the menubar to below the content
+.fpg-description {
+    font-family: $font-headlines;
+    font-size: 23px;
+    line-height: 1.3;
+    margin: 30px $gutter 0;
+    padding: 0;
+    text-align: center;
+
+    // Red line under table title
+    &::after {
+        border-bottom: 1px solid $color-red;
+        content: "";
+        display: block;
+        margin: 0 auto;
+        padding-top: 10px;
+        width: 40px;
+    }
+}

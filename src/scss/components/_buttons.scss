@@ -1,0 +1,23 @@
+/* BUTTONS */
+button.fpg-btn {
+    line-height: 1;
+
+    &.fpg-btn-large {
+        background-color: $color-red;
+        border-radius: 30px;
+        color: $color-white;
+        font-size: 19px;
+        padding: 21px 0 20px;
+    }
+}
+
+// Fixed footer buttons, which don't have .fpg-btn class
+.fpg-footer-btn {
+    background-color: $color-red;
+    border-radius: 30px;
+    color: $color-white;
+    font-size: 19px;
+    float: none;
+    line-height: 1;
+    padding: 21px 0 20px;
+}

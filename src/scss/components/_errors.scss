@@ -1,0 +1,19 @@
+/* ERRORS */
+// TODO: Improve visibility of error messages
+.errorMsg {
+    color: $color-ash;
+    font-size: $font-size;
+    font-style: italic;
+    margin: 0 $gutter;
+    text-align: center;
+}
+
+.error-box {
+    background: #FFF4CC url( '../img/icon-warning.svg' ) no-repeat 50% 20px; // Very light yellow background, yellow warning icon
+    margin: 0 0 20px 0;
+    padding: 50px $gutter $gutter;
+
+    .errorMsg {
+        color: #ECB800; // Mustard yellow when inside an error box
+    }
+}

@@ -1,0 +1,32 @@
+/* SECTION */
+// Global section block
+.fpg-section-item {
+    border: 0;
+    margin: 20px $gutter;
+    padding: 0;
+}
+
+// Global section title
+.fpg-section-title {
+    background: transparent;
+    color: $color-ash;
+    font-family: $font-headlines;
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 1.3;
+    margin: 1em 0 .35em;
+    padding: 0 $gutter;
+    text-align: center;
+    text-transform: none;
+
+    // Red line under section title
+    // TODO: Make this a mixin
+    &::after {
+        border-bottom: 1px solid $color-red;
+        content: "";
+        display: block;
+        margin: 0 auto;
+        padding-top: 10px;
+        width: 40px;
+    }
+}

@@ -1,0 +1,35 @@
+/*
+** WALLET PAGE
+** The Wallet home screen that should never be seen by
+** a Token user, but styled just in case...
+*/
+
+.fpg-wallet-container {
+    .fpg-wallet-image-empty {
+        margin-top: 0;
+        // TODO: Swap out empty wallet image with our own illustration
+    }
+
+    .header {
+        // TODO: Change the supporting text here
+        border: 0;
+        color: $color-ash;
+        font-family: $font-headlines;
+        font-size: 23px;
+        font-weight: normal;
+        line-height: 1.3;
+        margin: 20px $gutter 0;
+        width: auto;
+
+        // Red line under section title
+        // TODO: Make this a mixin
+        &::after {
+            border-bottom: 1px solid $color-red;
+            content: "";
+            display: block;
+            margin: 0 auto;
+            padding-top: 10px;
+            width: 40px;
+        }
+    }
+}

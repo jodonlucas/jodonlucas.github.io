@@ -1,0 +1,15 @@
+/* LOADERS */
+.fpg-sync-container {
+    // Change Fitpay's weird blue animated loader GIF...
+    .fpg-sync-loader {
+        border: 0;
+    }
+
+    // Loading message (ie. "Loading...")
+    .header {
+        border: 0;
+        color: $color-ash;
+        font-family: $font-copy;
+        font-size: 24px;
+    }
+}

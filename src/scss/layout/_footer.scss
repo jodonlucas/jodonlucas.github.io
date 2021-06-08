@@ -1,0 +1,40 @@
+/* FOOTER */
+.page {
+    padding-bottom: 90px; // Leave more space for scrolling past big red button
+}
+
+// Add space between the Verify Identity button and the Choose another
+// verification method link
+.fp-submit-OTP-footer {
+    margin-bottom: 20px;
+}
+
+button.fpg-btn.fpg-btn-large {
+    position: fixed;
+    bottom: 20px;
+    width: calc( 100vw - ( #{$gutter} * 2 ) );
+    left: $gutter;
+}
+
+// Border underneath each card in Wallet view
+.fpg-card-divider {
+    display: none;
+}
+
+// Fixed footer with buttons, like the one on the Terms screen
+.fpg-fixed-footer {
+    background: linear-gradient( 180deg, rgba( 255, 255, 255, 0 ) 0%, rgba( 255, 255, 255, 1 ) 15% ); // Fade to white gradient behind buttons
+    height: auto;
+    // TODO: Handle unsafe areas for iPhone X-class and non X-class phones
+    padding: 30px $gutter 30px;
+
+    .fpg-footer-btn {
+        display: block;
+        width: 100%;
+
+        &#decline-terms {
+            background: transparent;
+            color: $color-ash;
+        }
+    }
+}

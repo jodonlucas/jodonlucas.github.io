@@ -1,0 +1,109 @@
+/* FORMS */
+// TODO: Get expiration month and year on the same line
+
+label {
+    text-align: left;
+}
+
+select {
+    option {
+        font-weight: normal;
+
+        &:disabled {
+            color: $color-fog;
+        }
+    }
+}
+
+input,
+textarea {
+    -webkit-appearance: none; // Get rid of inner shadow on iOS Safari
+}
+
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=text],
+select,
+textarea {
+    background-color: $color-dove;
+    border: 2px solid $color-dove;
+    box-sizing: border-box;
+    color: $color-ash;
+    margin: 0;
+    outline: 0;
+    transition: all .3s ease-in-out;
+
+    &:focus {
+        background-color: $color-white;
+        box-shadow: none;
+        border: 2px solid $color-midgrey;
+    }
+
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: $color-placeholder;
+    }
+
+    &::-moz-placeholder { /* Firefox 19+ */
+        color: $color-placeholder;
+    }
+
+    &:-ms-input-placeholder { /* IE 10+ */
+        color: $color-placeholder;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+        color: $color-placeholder;
+    }
+}
+
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=text],
+select {
+    border-radius: 25px;
+    line-height: 1;
+    min-height: 46px;
+    padding: 0 15px;
+}
+
+.fp-add-card-form {
+    // Moving form labels from above to below inputs
+    input,
+    select {
+        top: -12px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    label {
+        line-height: 1;
+        position: relative;
+        padding: 0 0 0 15px;
+        top: 52px;
+        margin: 0;
+        color: #999;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+}
+
+// Space out numbers for credit cards and CVV
+.fp-add-card-number-input,
+.fp-add-card-cvv-input,
+.fpg-static-card-number,
+.fp-card-detail-dan-num {
+    letter-spacing: 4px;
+}
+
+form {
+    text-align: left;
+}
+
+// Help tooltip for credit card CVV
+// TODO: Figure out why this is hidden by default
+.fpg-cvv-help-icon {
+    background: $color-ash;
+    mask-image: url( '../img/icon-help.svg' );
+}

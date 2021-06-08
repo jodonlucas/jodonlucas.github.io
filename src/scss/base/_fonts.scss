@@ -1,0 +1,29 @@
+/* WEB FONTS */
+@font-face {
+    font-family: 'Gandhi';
+    src: url('//tokenizeinc.github.io/fitpay-css/dist/fonts/GandhiSerif-Regular.otf') format('opentype');
+        // url('../fonts/GandhiSerif-Regular.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+    // Load fallback font(s) immediately and swap this in when loaded
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sanomat Sans';
+    src: url('//tokenizeinc.github.io/fitpay-css/dist/fonts/Sanomat-Sans-Text-Regular.woff2') format('woff2');
+        // url('../fonts/Sanomat-Sans-Text-Regular.woff') format('woff');
+    font-style: normal;
+    // Load fallback font(s) immediately and swap this in when loaded
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sanomat Sans';
+    src: url('//tokenizeinc.github.io/fitpay-css/dist/fonts/Sanomat-Sans-Text-Bold.woff2') format('woff2');
+        // url('../fonts/Sanomat-Sans-Text-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    // Load fallback font(s) immediately and swap this in when loaded
+    font-display: swap;
+}

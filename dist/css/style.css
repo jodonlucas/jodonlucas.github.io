@@ -1,0 +1,834 @@
+/* VARIABLES */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+body {
+  background: #FFF; }
+
+body,
+input,
+select {
+  color: #333333; }
+
+/* WEB FONTS */
+@font-face {
+  font-family: 'Gandhi';
+  src: url("//tokenizeinc.github.io/fitpay-css/dist/fonts/GandhiSerif-Regular.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Sanomat Sans';
+  src: url("//tokenizeinc.github.io/fitpay-css/dist/fonts/Sanomat-Sans-Text-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Sanomat Sans';
+  src: url("//tokenizeinc.github.io/fitpay-css/dist/fonts/Sanomat-Sans-Text-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
+/* TYPOGRAPHY */
+body,
+p,
+input,
+textarea,
+select,
+button {
+  font-family: "Sanomat Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px; }
+
+body,
+p {
+  line-height: 1.6; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  background: transparent;
+  border: 0;
+  color: #333333; }
+
+h1,
+h2,
+h3 {
+  font-family: Gandhi, "Times New Roman", Times, serif; }
+
+h4,
+h5,
+h6 {
+  font-family: "Sanomat Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+h1 {
+  font-size: 31px;
+  line-height: 1.129032258; }
+
+/* BUTTONS */
+button.fpg-btn {
+  line-height: 1; }
+  button.fpg-btn.fpg-btn-large {
+    background-color: #FA1E00;
+    border-radius: 30px;
+    color: #FFFFFF;
+    font-size: 19px;
+    padding: 21px 0 20px; }
+
+.fpg-footer-btn {
+  background-color: #FA1E00;
+  border-radius: 30px;
+  color: #FFFFFF;
+  font-size: 19px;
+  float: none;
+  line-height: 1;
+  padding: 21px 0 20px; }
+
+/* CREDIT CARD ARTWORK */
+.fpg-card-art {
+  background: url("../img/bg-circle.svg") no-repeat center center;
+  background-size: 53vw;
+  padding: 9vw 0;
+  width: 59vw; }
+
+/* ERRORS */
+.errorMsg {
+  color: #333333;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 20px;
+  text-align: center; }
+
+.error-box {
+  background: #FFF4CC url("../img/icon-warning.svg") no-repeat 50% 20px;
+  margin: 0 0 20px 0;
+  padding: 50px 20px 20px; }
+  .error-box .errorMsg {
+    color: #ECB800; }
+
+/* LOADERS */
+.fpg-sync-container .fpg-sync-loader {
+  border: 0; }
+
+.fpg-sync-container .header {
+  border: 0;
+  color: #333333;
+  font-family: "Sanomat Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px; }
+
+/* MODALS */
+/* SECTION */
+.fpg-section-item {
+  border: 0;
+  margin: 20px 20px;
+  padding: 0; }
+
+.fpg-section-title {
+  background: transparent;
+  color: #333333;
+  font-family: Gandhi, "Times New Roman", Times, serif;
+  font-size: 23px;
+  font-weight: normal;
+  line-height: 1.3;
+  margin: 1em 0 .35em;
+  padding: 0 20px;
+  text-align: center;
+  text-transform: none; }
+  .fpg-section-title::after {
+    border-bottom: 1px solid #FA1E00;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 40px; }
+
+/* TABLES */
+.fp-idv-table-activation-methods {
+  border: 0;
+  margin: 10px 20px 20px;
+  width: auto; }
+  .fp-idv-table-activation-methods .fpg-table-row {
+    background: transparent url("../img/icon-chevron-right.svg") no-repeat center right;
+    background-size: 9px 16px;
+    padding-right: 20px; }
+
+.fpg-table-row {
+  border-bottom: 1px solid #D8D8D8;
+  color: #333333;
+  font-size: 16px;
+  height: auto;
+  padding: 12px 0; }
+  .fpg-table-row small {
+    color: #A8A6A6;
+    font-size: 13px; }
+
+/* FORMS */
+label {
+  text-align: left; }
+
+select option {
+  font-weight: normal; }
+  select option:disabled {
+    color: #A8A6A6; }
+
+input,
+textarea {
+  -webkit-appearance: none; }
+
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=text],
+select,
+textarea {
+  background-color: #F7F7F7;
+  border: 2px solid #F7F7F7;
+  box-sizing: border-box;
+  color: #333333;
+  margin: 0;
+  outline: 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+  input[type=number]:focus,
+  input[type=password]:focus,
+  input[type=tel]:focus,
+  input[type=text]:focus,
+  select:focus,
+  textarea:focus {
+    background-color: #FFFFFF;
+    box-shadow: none;
+    border: 2px solid #D8D8D8; }
+  input[type=number]::-webkit-input-placeholder,
+  input[type=password]::-webkit-input-placeholder,
+  input[type=tel]::-webkit-input-placeholder,
+  input[type=text]::-webkit-input-placeholder,
+  select::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #A8A6A6; }
+  input[type=number]::-moz-placeholder,
+  input[type=password]::-moz-placeholder,
+  input[type=tel]::-moz-placeholder,
+  input[type=text]::-moz-placeholder,
+  select::-moz-placeholder,
+  textarea::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #A8A6A6; }
+  input[type=number]:-ms-input-placeholder,
+  input[type=password]:-ms-input-placeholder,
+  input[type=tel]:-ms-input-placeholder,
+  input[type=text]:-ms-input-placeholder,
+  select:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #A8A6A6; }
+  input[type=number]:-moz-placeholder,
+  input[type=password]:-moz-placeholder,
+  input[type=tel]:-moz-placeholder,
+  input[type=text]:-moz-placeholder,
+  select:-moz-placeholder,
+  textarea:-moz-placeholder {
+    /* Firefox 18- */
+    color: #A8A6A6; }
+
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=text],
+select {
+  border-radius: 25px;
+  line-height: 1;
+  min-height: 46px;
+  padding: 0 15px; }
+
+.fp-add-card-form input,
+.fp-add-card-form select {
+  top: -12px;
+  position: relative;
+  margin-bottom: 20px; }
+
+.fp-add-card-form label {
+  line-height: 1;
+  position: relative;
+  padding: 0 0 0 15px;
+  top: 52px;
+  margin: 0;
+  color: #999;
+  font-size: 12px;
+  text-transform: uppercase; }
+
+.fp-add-card-number-input,
+.fp-add-card-cvv-input,
+.fpg-static-card-number,
+.fp-card-detail-dan-num {
+  letter-spacing: 4px; }
+
+form {
+  text-align: left; }
+
+.fpg-cvv-help-icon {
+  background: #333333;
+  -webkit-mask-image: url("../img/icon-help.svg");
+          mask-image: url("../img/icon-help.svg"); }
+
+/* HEADER */
+.fpg-title-wrapper {
+  position: relative;
+  margin-top: 0; }
+  .fpg-title-wrapper:before {
+    background: #FA1E00 url("../img/logo-wordmark.svg") no-repeat center center;
+    background-size: 70px 20px;
+    content: "";
+    display: block;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0; }
+  .fpg-title-wrapper:after {
+    background: url("../img/bg-curve.svg") no-repeat bottom center;
+    background-size: contain;
+    content: "";
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: 5.87vw;
+    width: 100%; }
+  .fpg-title-wrapper .fpg-title,
+  .fpg-title-wrapper .createWallet-title {
+    background: transparent;
+    border: 0;
+    margin-left: 20px;
+    margin-right: 20px; }
+    .fpg-title-wrapper .fpg-title::before,
+    .fpg-title-wrapper .createWallet-title::before {
+      color: #A8A6A6;
+      content: "Token Credentials";
+      display: block;
+      font-family: "Sanomat Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 5px;
+      text-transform: uppercase; }
+    .fpg-title-wrapper .fpg-title.fp-add-card-title, .fpg-title-wrapper .fpg-title.fp-terms-title, .fpg-title-wrapper .fpg-title.fp-idv-title,
+    .fpg-title-wrapper .createWallet-title.fp-add-card-title,
+    .fpg-title-wrapper .createWallet-title.fp-terms-title,
+    .fpg-title-wrapper .createWallet-title.fp-idv-title {
+      content: "Add a Credit Card"; }
+    .fpg-title-wrapper .fpg-title.fp-card-detail-title,
+    .fpg-title-wrapper .createWallet-title.fp-card-detail-title {
+      content: "Your Wallet"; }
+    .fpg-title-wrapper .fpg-title::after,
+    .fpg-title-wrapper .createWallet-title::after {
+      border-bottom: 1px solid #FA1E00;
+      content: "";
+      display: block;
+      margin: 0 auto;
+      padding-top: 10px;
+      width: 40px; }
+  .fpg-title-wrapper .fpg-title-btn {
+    position: fixed;
+    top: 8px;
+    z-index: 200; }
+  .fpg-title-wrapper .fpg-back-arrow {
+    background: url("../img/icon-arrow-left.svg") no-repeat center center;
+    background-size: 20px 16px; }
+
+.fpg-description {
+  font-family: "Sanomat Sans", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 20px;
+  text-align: center;
+  width: auto; }
+
+/* FOOTER */
+.page {
+  padding-bottom: 90px; }
+
+.fp-submit-OTP-footer {
+  margin-bottom: 20px; }
+
+button.fpg-btn.fpg-btn-large {
+  position: fixed;
+  bottom: 20px;
+  width: calc( 100vw - ( 20px * 2 ));
+  left: 20px; }
+
+.fpg-card-divider {
+  display: none; }
+
+.fpg-fixed-footer {
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 15%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, white 15%);
+  height: auto;
+  padding: 30px 20px 30px; }
+  .fpg-fixed-footer .fpg-footer-btn {
+    display: block;
+    width: 100%; }
+    .fpg-fixed-footer .fpg-footer-btn#decline-terms {
+      background: transparent;
+      color: #333333; }
+
+/*
+** CARD DETAIL PAGE
+** Detail page for specific card in wallet, including the card art
+** and other bank information
+*/
+.cardDetail-page .fpg-delete {
+  background-image: url("../img/icon-delete.svg");
+  background-size: 24px 27px;
+  opacity: 1; }
+
+.cardDetail-page .cardDetail-toggle-row {
+  height: auto;
+  margin: 10px 0 0;
+  padding: 0;
+  width: auto; }
+
+.cardDetail-page .cardDetail-section-toggleButtons {
+  border: 0;
+  margin: 0 20px 10px; }
+  .cardDetail-page .cardDetail-section-toggleButtons .fp-toggle-btn {
+    text-align: center; }
+    .cardDetail-page .cardDetail-section-toggleButtons .fp-toggle-btn span {
+      display: inline-block;
+      font-size: 14px;
+      line-height: 32px;
+      margin: 0 8px 0 0; }
+    .cardDetail-page .cardDetail-section-toggleButtons .fp-toggle-btn .fp-toggle-btn-container {
+      display: inline-block;
+      float: none;
+      margin: 0; }
+      .cardDetail-page .cardDetail-section-toggleButtons .fp-toggle-btn .fp-toggle-btn-container .switch {
+        margin: 0; }
+  .cardDetail-page .cardDetail-section-toggleButtons #activateCardToggle,
+  .cardDetail-page .cardDetail-section-toggleButtons .fp-card-detail-suspend-msg {
+    display: none; }
+
+.cardDetail-page .cardDetail-section-support .cardDetail-menu-body {
+  margin: 0 20px; }
+  .cardDetail-page .cardDetail-section-support .cardDetail-menu-body .detail-menu-row {
+    background: transparent url("../img/icon-chevron-right.svg") no-repeat center right;
+    background-size: 9px 16px;
+    border-top: 0;
+    border-bottom: 1px solid #F7F7F7;
+    line-height: 56px; }
+    .cardDetail-page .cardDetail-section-support .cardDetail-menu-body .detail-menu-row a {
+      color: #333333;
+      font-size: 16px; }
+
+.cardDetail-page transaction-list {
+  display: none; }
+
+.fp-card-detail-dan {
+  margin: 20px 20px 0;
+  text-align: center; }
+  .fp-card-detail-dan hr {
+    display: none; }
+  .fp-card-detail-dan .fp-card-detail-dan-label {
+    font-size: 14px;
+    margin: 0 8px 0 0; }
+  .fp-card-detail-dan .fp-card-detail-dan-num {
+    background-color: #F7F7F7;
+    border-radius: 17px;
+    font-size: 16px;
+    line-height: 34px;
+    padding: 0 10px;
+    margin: 0; }
+  .fp-card-detail-dan .fp-card-detail-dan-label,
+  .fp-card-detail-dan .fp-card-detail-dan-num {
+    display: inline-block;
+    float: none;
+    width: auto; }
+
+.fp-card-detail-dan-msg,
+.fp-card-detail-suspend-msg {
+  color: #A8A6A6;
+  font-size: 14px;
+  padding: 0;
+  text-align: center; }
+
+/*
+** CREATE WALLET PAGE
+** Initial PIN creation page that should never be seen by
+** a Token user, but styled just in case...
+*/
+.createWallet-page form section {
+  text-align: center; }
+
+/*
+** TERMS PAGE
+** Terms and Conditions page from card issuers that a user must accept
+** (or decline)
+*/
+.fp-terms-container {
+  margin-bottom: 150px; }
+
+/*
+** VERIFY IDENTITY PAGE
+** Verify Identtiy page from card issuers that a user must take action
+** on by using one of the options presented before the card can be
+** activated on the device
+*/
+.fpg-description {
+  font-family: Gandhi, "Times New Roman", Times, serif;
+  font-size: 23px;
+  line-height: 1.3;
+  margin: 30px 20px 0;
+  padding: 0;
+  text-align: center; }
+  .fpg-description::after {
+    border-bottom: 1px solid #FA1E00;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 40px; }
+
+/*
+** WALLET PAGE
+** The Wallet home screen that should never be seen by
+** a Token user, but styled just in case...
+*/
+.fpg-wallet-container .fpg-wallet-image-empty {
+  margin-top: 0; }
+
+.fpg-wallet-container .header {
+  border: 0;
+  color: #333333;
+  font-family: Gandhi, "Times New Roman", Times, serif;
+  font-size: 23px;
+  font-weight: normal;
+  line-height: 1.3;
+  margin: 20px 20px 0;
+  width: auto; }
+  .fpg-wallet-container .header::after {
+    border-bottom: 1px solid #FA1E00;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 40px; }
+
+/*
+** WALLET ACCESS PAGE
+** The PIN pad page that should never be seen by
+** a Token user, but styled just in case...
+*/
+.pin-pad li {
+  float: none;
+  width: auto; }
+  .pin-pad li a.pin-pad-key {
+    width: 28vw;
+    height: 13vh;
+    line-height: 13vh; }
+
+/* SHAME! SHAME! SHAME! */

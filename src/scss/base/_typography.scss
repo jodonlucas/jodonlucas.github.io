@@ -1,0 +1,44 @@
+/* TYPOGRAPHY */
+body,
+p,
+input,
+textarea,
+select,
+button {
+    font-family: $font-copy;
+    font-size: $font-size;
+}
+
+body,
+p {
+    // line-height: 2.5;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    background: transparent;
+    border: 0;
+    color: $color-ash;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $font-headlines;
+}
+
+h4,
+h5,
+h6 {
+    font-family: $font-copy;
+}
+
+h1 {
+    font-size: 31px;
+    line-height: 1.129032258;
+}

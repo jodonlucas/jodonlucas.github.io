@@ -1,0 +1,134 @@
+/*
+** CARD DETAIL PAGE
+** Detail page for specific card in wallet, including the card art
+** and other bank information
+*/
+
+// TODO Move Delete Card button/link to bottom of screen
+
+.cardDetail-page {
+    // Delete card button
+    .fpg-delete {
+        background-image: url( '../img/icon-delete.svg' );
+        background-size: 24px 27px;
+        opacity: 1;
+    }
+
+    .cardDetail-errorMsg {
+        // TODO: Add illustration for error when trying to load card details
+    }
+
+    .cardDetail-toggle-row {
+        // TODO: Make Default Card toggle more prominent, style nicely with Suspend toggle, maybe left align the toggle itself...
+        height: auto;
+        margin: 10px 0 0;
+        padding: 0;
+        width: auto;
+    }
+
+    // Suspend Card and Make Primary Card toggle button sections
+    .cardDetail-section-toggleButtons {
+        border: 0;
+        margin: 0 $gutter 10px;
+        // TODO: Style toggle button
+
+        .fp-toggle-btn {
+            text-align: center;
+
+            // Title text for toggle button
+            span {
+                display: inline-block;
+                font-size: 14px;
+                line-height: 32px; // Vertically align with toggle button
+                margin: 0 8px 0 0;
+            }
+
+            // Toggle button container
+            .fp-toggle-btn-container {
+                display: inline-block;
+                float: none;
+                margin: 0;
+
+                .switch {
+                    margin: 0;
+                }
+            }
+        } // END .fp-toggle-btn
+
+        // Hide Suspend Card option
+        #activateCardToggle,
+        .fp-card-detail-suspend-msg {
+            display: none;
+        }
+    }
+
+    // Support links for credit card/bank
+    .cardDetail-section-support {
+        .cardDetail-menu-body {
+            margin: 0 $gutter;
+
+            .detail-menu-row {
+                background: transparent url( '../img/icon-chevron-right.svg' ) no-repeat center right;
+                background-size: 9px 16px;
+                border-top: 0;
+                border-bottom: 1px solid $color-dove;
+                line-height: 56px;
+
+                // TODO: Swap out Fitpay icons for our own
+                a {
+                    color: $color-ash;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    // Hide transaction history on Card Details page
+    transaction-list {
+        display: none;
+    }
+} // END .cardDetail-page
+
+// Device Account Number display
+.fp-card-detail-dan {
+    margin: 20px $gutter 0;
+    text-align: center;
+
+    // Remove divider line
+    hr {
+        display: none;
+    }
+
+    // Device Account Number text
+    .fp-card-detail-dan-label {
+        font-size: 14px;
+        margin: 0 8px 0 0;
+    }
+
+    // Device Account Number number
+    .fp-card-detail-dan-num {
+        background-color: $color-lightgrey;
+        border-radius: 17px;
+        font-size: 16px;
+        line-height: 34px;
+        padding: 0 10px;
+        margin: 0;
+    }
+
+    // Disable floats and manual widths
+    .fp-card-detail-dan-label,
+    .fp-card-detail-dan-num {
+        display: inline-block;
+        float: none;
+        width: auto;
+    }
+}
+
+// Support text for card details options
+.fp-card-detail-dan-msg,
+.fp-card-detail-suspend-msg {
+    color: $color-fog;
+    font-size: 14px;
+    padding: 0;
+    text-align: center;
+}
